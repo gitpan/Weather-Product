@@ -13,7 +13,14 @@ Revision history for Perl extension Weather::Product.
         - the station in the WMO header is also added as a "product"
           (Technically products from different stations should be treated as
           different Weather::Product objects, but U.S. NWS products cover
-          larger areas and may be broken down by stations.)
+          larger areas and may be broken down by stations)
         - added POD to module
         - included README with distribution
+
+1.2.1  Tue Aug 10 05:55:05 1999
+        - minor documentation tweaks
+        - added max_age property and age method
+        - products older than max_age (when max_age != 0) are purged
+        - the time method will return null if the timestamp cannot be
+          determined (usually from a previous month)
 
