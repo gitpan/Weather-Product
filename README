@@ -1,0 +1,11 @@
+Weather::Product is a base module for parsing WMO-style weather products
+(as in forecasts, observations, etc.) as might come from various weather
+services.
+
+A detailed description can be found in the module's POD.
+
+Required Modules:
+	Carp
+	FileHandle
+	LWP::UseAgent
+	Time::Local

@@ -2,4 +2,5 @@ Changes
 Makefile.PL
 MANIFEST
 Product.pm
+README
 test.pl

@@ -3,6 +3,17 @@ Revision history for Perl extension Weather::Product.
 1.0.6  Sat Jul 24 17:16:22 1999
         - original version
 
-1.1.0  Wed Jul 28 16:53:58 1999  
+1.1.0  Wed Jul 28 16:53:58 1999
         - moved code for parsing NWS-formatted products into a
           separate module, Weather::Product::NWS
+
+1.2.0  Mon Aug 2 03:07:25 1999
+        - added purge method to remove "orphaned" products
+        - orphans are removed after parsing products
+        - the station in the WMO header is also added as a "product"
+          (Technically products from different stations should be treated as
+          different Weather::Product objects, but U.S. NWS products cover
+          larger areas and may be broken down by stations.)
+        - added POD to module
+        - included README with distribution
+
